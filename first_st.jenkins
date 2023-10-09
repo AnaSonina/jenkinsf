@@ -4,10 +4,10 @@ properties([disableConcurrentBuilds()])
 
 pipeline{
   agent{
-    lable 'master'
+    label 'master'
     }
   options{
-    buildDiscarder(logRotator(unmToKeepStr: '10', artifactNumToKeepStr: '10'))
+    buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStr: '10'))
     timestamps()
   }
   stages{
