@@ -1,4 +1,4 @@
-#igroovy
+#!groovy
 // Check URL properties
 properties([disableConcurrentBuilds()])
 
