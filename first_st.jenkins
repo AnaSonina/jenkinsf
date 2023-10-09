@@ -7,7 +7,7 @@ pipeline{
     lable 'master'
     }
   options{
-    buildDiscarder(logRotator(unmToKeepStr: '10', artifactNumToKeepStr: '10))
+    buildDiscarder(logRotator(unmToKeepStr: '10', artifactNumToKeepStr: '10'))
     timestamps()
   }
   stages{
